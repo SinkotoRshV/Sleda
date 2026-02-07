@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Новини (одобрени)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; max-width: 980px; }
+    header { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    select, input, button { padding:10px; font-size:16px; }
+    .item { border:1px solid #ddd; border-radius:12px; padding:14px; margin:12px 0; }
+    .meta { color:#666; font-size:14px; display:flex; gap:10px; flex-wrap:wrap; }
+    a { text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .badge { font-size:12px; padding:3px 8px; border-radius:999px; background:#f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>🗞️ Новини (само одобрени)</h1>
+
+  <header>
+    <label>
+      Тема:
+      <select id="topic">
+        <option value="all">Всички</option>
+        <option value="politics">Политика</option>
+        <option value="world">Световни</option>
+        <option value="economy">Икономика</option>
+        <option value="sport">Спорт</option>
+        <option value="burgas">Бургас</option>
+      </select>
+    </label>
+
+    <input id="q" placeholder="Търси в заглавия…" style="flex:1; min-width:220px;" />
+    <button id="reload">Обнови</button>
+  </header>
+
+  <p id="status" class="meta"></p>
+  <div id="list"></div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
