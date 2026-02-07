@@ -1,5 +1,5 @@
-const SUPABASE_URL = "PASTE_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_ANON_KEY = "PASTE_SUPABASE_ANON_KEY_HERE";
+const SUPABASE_URL = https://ygprucfqlsxqkwlxexfo.supabase.co";
+const SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlncHJ1Y2ZxbHN4cWt3bHhleGZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0Nzg3NzAsImV4cCI6MjA4NjA1NDc3MH0.APiUMf2qkoI5MZoDUb0bvmUJjrt6Z7vQcWGbHVm6sbY;
 
 const statusEl = document.getElementById("status");
 const listEl = document.getElementById("list");
